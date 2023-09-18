@@ -5,6 +5,7 @@ on: [push]
 env:
   ROB_WAS_HERE: "the value of love"
   TEST: ${{ vars.TEST }}
+  MY_SECRET: ${{ secrets.MY_SECRET}}
 
 jobs:
   Explore-GitHub-Actions:
@@ -23,6 +24,7 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "env.ROB_WAS_HERE ${{ env.ROB_WAS_HERE }}"
       - run: echo "env.TEST ${{ env.TEST }}"
+      - run: echo "my secret is ${{ env.MY_SECRET }}"
       - run: echo "environment is ${{ inputs.environment }}"
       - name: Run a script
         run: ./do-something.sh
