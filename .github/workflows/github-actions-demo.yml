@@ -22,4 +22,5 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "env.ROB_WAS_HERE ${{ env.ROB_WAS_HERE }}"
       - run: echo "environment is ${{ inputs.environment }}"
-      - run: ./do-something.sh
+      - name: Run a script
+        run: ./do-something.sh
