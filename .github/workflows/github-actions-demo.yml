@@ -1,9 +1,13 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
+env:
+  ROB_WAS_HERE: "rob was here"
+
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
+    environment: ${{ inputs.environment }}
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - run: echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
@@ -16,3 +20,5 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      - run: echo "${{ env.ROB_WAS_HERE }}"
+      - run: echo {{ inputs.environment }}
