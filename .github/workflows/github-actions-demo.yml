@@ -24,4 +24,4 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - run: echo "${{ env.ROB_WAS_HERE }}"
-      - run: echo "environment: ${{ inputs.environment }}"
+      - run: echo "environment is ${{ inputs.environment }}"
