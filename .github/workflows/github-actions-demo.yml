@@ -4,7 +4,7 @@ on: [push]
 
 env:
   ROB_WAS_HERE: "the value of love"
-  TEST: ${{ environments.TEST }}
+  TEST: ${{ secrets.TEST }}
 
 jobs:
   Explore-GitHub-Actions:
