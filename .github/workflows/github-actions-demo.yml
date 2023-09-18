@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 
 env:
-  ROB_WAS_HERE: "rob was here"
+  ROB_WAS_HERE: "the value of love"
 
 jobs:
   Explore-GitHub-Actions:
@@ -20,5 +20,6 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
-      - run: echo "${{ env.ROB_WAS_HERE }}"
+      - run: echo "env.ROB_WAS_HERE ${{ env.ROB_WAS_HERE }}"
       - run: echo "environment is ${{ inputs.environment }}"
+      - run: ./do-something.sh
