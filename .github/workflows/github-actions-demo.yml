@@ -1,12 +1,13 @@
 name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
+  inputs:
+    environment:
+      required: true
+      type: string
+
 env:
   ROB_WAS_HERE: "rob was here"
-inputs:
-  environment:
-    required: true
-    type: string
 
 jobs:
   Explore-GitHub-Actions:
