@@ -11,4 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: big step
-        run: echo "environment is ${{ inputs.environment }}"
+        run: echo "_reusable_test.yml - environment is ${{ inputs.environment }}"
