@@ -1,0 +1,14 @@
+name: test
+on: 
+  workflow_call:
+    inputs:
+      environment:
+        required: true
+        type: string
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: big step
+        run: echo "environment is ${{ inputs.environment }}"
