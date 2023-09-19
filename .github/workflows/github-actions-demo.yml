@@ -39,3 +39,5 @@ jobs:
         run: ./do-something.sh
   test:
     uses: ./.github/workflows/reusable_test.yml
+    with:
+      environment: ${{ inputs.environment || 'integration' }}
