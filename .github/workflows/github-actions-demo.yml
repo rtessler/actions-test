@@ -40,4 +40,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      uses: ./_reusable_test.yml
+      - uses: ./_reusable_test.yml
