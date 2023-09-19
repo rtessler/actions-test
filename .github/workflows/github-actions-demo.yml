@@ -38,5 +38,4 @@ jobs:
       - name: Run a script
         run: ./do-something.sh
   test:
-    runs-on: ubuntu-latest
-    uses: ./.github/workflows/_reusable_test.yml
+    uses: ./.github/workflows/reusable_test.yml
