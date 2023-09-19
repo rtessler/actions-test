@@ -40,5 +40,3 @@ jobs:
   test:
     runs-on: ubuntu-latest
     uses: ./.github/workflows/_reusable_test.yml
-    with:
-      environment: ${{ inputs.environment || 'integration' }}
