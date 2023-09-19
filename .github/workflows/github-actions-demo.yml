@@ -39,4 +39,5 @@ jobs:
         run: ./do-something.sh
   test:
     runs-on: ubuntu-latest
+    steps:
       uses: ./_reusable_test.yml
