@@ -12,4 +12,4 @@ jobs:
     steps:
       # - uses: actions/checkout@v3
       - name: big step
-        run: echo "_reusable_test.yml - environment is ${{ inputs.environment }}"
+        run: echo "reusable_test.yml - environment is ${{ inputs.environment }}"
